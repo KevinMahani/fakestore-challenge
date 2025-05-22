@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'YekanBakh';
+  src: url('/fonts/YekanBakh-Heavy.woff2') format('woff2');
+  src: url('/fonts/YekanBakh-Heavy.woff') format('woff2');
+  font-weight: normal; 
+  font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    border-radius: 8px;
+    background: var(--Gray-50, #E9EDF5);
+    font-family: "YekanBakh",
+    sans-serif,Arial, Helvetica, sans-serif;
+
+}
+
+
+.shop-label {
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1e293b;
+    justify-content:center;
+    align-items: center;
+    background-color: white;
+    padding-top: 10px;
+} 
+
+.contents {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    color: var(--Blue-900, #0A2A51);
+}
+
+
+
+
+
+.header-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  position: relative;
+}
+
+.header-links a:hover {
+  color: #2563eb;
+}
+
+.header-links .relative span {
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.25rem 0.4rem;
+  color: white;
+}
