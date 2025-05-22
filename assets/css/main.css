@@ -68,3 +68,89 @@ body {
   padding: 0.25rem 0.4rem;
   color: white;
 }
+
+
+.page-wrapper {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #f9fafb;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  height: 80%;
+}
+
+.product-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.product-image-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+.product-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 4px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 1.4em; /* یا ارتفاع مشخص مثل 22px */
+}
+
+.product-description {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 5; /* 👈 فقط ۴ خط */
+  line-clamp: 5; /* پشتیبانی در مرورگرهای جدیدتر */
+}
+
+.product-price {
+    margin-top: auto;
+  font-weight: bold;
+  color: #2563eb;
+}
+
