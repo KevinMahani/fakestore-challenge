@@ -152,5 +152,202 @@ h1 {
     margin-top: auto;
   font-weight: bold;
   color: #2563eb;
+  
 }
 
+.cart-wrapper {
+    padding: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  
+}
+
+.cart-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.cart-empty {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.remove-btn {
+  background-color: #ef4444; /* قرمز ملایم */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.3);
+  margin-top: 8px;
+  margin-left: 20px;;
+  align-self: flex-start;
+}
+
+.remove-btn:hover {
+  background-color: #b91c1c; /* قرمز تیره‌تر */
+  box-shadow: 0 4px 12px rgba(185, 28, 28, 0.5);
+}
+
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #111827;
+}
+
+.item-quantity,
+.item-total {
+  font-size: 14px;
+  color: #374151;
+}
+
+.remove-button {
+  background: none;
+  color: #ef4444;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.remove-button:hover {
+  background-color: #fee2e2;
+}
+
+
+
+.product-details-wrapper {
+  padding: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.error-message,
+.loading-message {
+  color: #ef4444;
+  font-size: 16px;
+}
+
+.product-details-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+  .product-details-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.product-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-details-image {
+  max-height: 320px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.product-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-details-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.product-details-description {
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.product-details-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.add-to-cart-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #1d4ed8;
+}
+
+
+.remove-btn {
+  background-color: #3b82f6; /* رنگ آبی مشابه بقیه دکمه‌ها */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+
+}
+
+.remove-btn:hover {
+  background-color: #2563eb; /* رنگ آبی تیره‌تر هنگام هاور */
+}
