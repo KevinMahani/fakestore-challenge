@@ -1,8 +1,8 @@
 <template>
   <div class="page-wrapper">
-    <h1 class="prod-label">محصولات</h1>
-    <div v-if="error" class="text-error">خطا در دریافت محصولات</div>
-    <div v-else-if="!products">در حال بارگذاری...</div>
+    <h1 class="prod-label">Products</h1>
+    <div v-if="error" class="text-error">Error retrieving new information</div>
+    <div v-else-if="!products">Loading ... </div>
     <div v-else class="product-grid">
       <NuxtLink
         v-for="product in products"
